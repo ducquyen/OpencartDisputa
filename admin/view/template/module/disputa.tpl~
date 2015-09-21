@@ -8,16 +8,14 @@
 <?php if ($error_warning) { ?>
 <div class="warning"><?php echo $error_warning; ?></div>
 <?php } ?>
-<div class="box">
+<div class="panel panel-default">
+<div class="panel-heading">
   <div class="heading">
-    <h1><img src="view/image/module.png" alt="" /> <?php echo $heading_title; ?></h1>
-    <div class="buttons">
-      <a onclick="location = '<?php echo $export; ?>';" class="button"><span><?php echo $button_export; ?></span></a>
-    </div>
+    <h3 class="panel-title"><?php echo $heading_title; ?></h1>
   </div>
-  <div class="content">
+  <div class="panel-body">
     <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
-      <table id="module" class="list">
+      <table id="module" class="table">
         <thead>
           <tr>
             <td class="left"><?php echo $entry_url; ?></td>
@@ -43,6 +41,7 @@
       </table>
     </form>
   </div>
+</div>
 </div>
 <script type="text/javascript"><!--
 var module_row = <?php echo $module_row; ?>;

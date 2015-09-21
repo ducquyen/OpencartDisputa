@@ -1,21 +1,29 @@
 <?php
 // Heading
-$_['heading_title']    = 'Disputa de Preço';
+$_['heading_title']       = 'Disputa de Preços';
 
 // Text
-$_['text_module']      = 'Modules';
-$_['text_success']     = 'Disputa de Preço alterado';
-$_['text_edit']        = 'Editar';
+$_['text_module']         = 'Módulos';
+$_['text_success']        = 'Módulo Informações atualizado com sucesso!';
+$_['text_content_top']    = 'Conteúdo do Topo';
+$_['text_content_bottom'] = 'Conteúdo do Rodapé';
+$_['text_column_left']    = 'Coluna da Esquerda';
+$_['text_column_right']   = 'Coluna da Direita';
 
 // Entry
-$_['entry_name']       = 'Nome';
-$_['entry_limit']      = 'Limite';
-$_['entry_width']      = 'Largura';
-$_['entry_height']     = 'Altura';
-$_['entry_status']     = 'Status';
+$_['entry_layout']        = 'Layout:';
+$_['entry_position']      = 'Posição:';
+$_['entry_status']        = 'Situação:';
+$_['entry_sort_order']    = 'Ordem:';
 
+$_['button_data']    = 'Dados';
+$_['button_export']    = 'Exportar';
+
+$_['entry_url'] = 'URL';
+$_['entry_valor'] = 'Valor Encontrado';
+$_['entry_usuario'] = 'Usuario';
+$_['entry_email'] = 'E-mail';
+$_['entry_datahora'] = 'Data Cadastro';
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to modify Popular Products module!';
-$_['error_name']       = 'Module Name must be between 3 and 64 characters!';
-$_['error_width']      = 'Width required!';
-$_['error_height']     = 'Height required!';
+$_['error_permission']    = 'Atenção: Você não possui permissão para modificar!';
+?>
