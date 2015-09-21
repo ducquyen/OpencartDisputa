@@ -1,0 +1,7 @@
+<?php
+	class ModelModuleDisputa extends Model {
+		public function save($name,$email) {
+			$this->db->query("INSERT INTO `disputas` (`id`, `url`,`valor`,`usuario`, `email`) VALUES (null, '$url', '$valor', '$usuario', '$email');");
+		}
+	}
+?>
