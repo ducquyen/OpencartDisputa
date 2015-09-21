@@ -20,8 +20,8 @@
           <tr>
             <td class="left"><?php echo $entry_url; ?></td>
 	    <td class="left"><?php echo $entry_email; ?></td>
-	    <td class="left"><?php echo $entry_productId; ?></td>
-            <td class="left"><?php echo $entry_productName; ?></td>
+	    <td class="left"><?php echo $entry_pid; ?></td>
+            <td class="left"><?php echo $entry_pname; ?></td>
             <td class="left"><?php echo $entry_datahora; ?></td>
           </tr>
         </thead>
@@ -75,3 +75,4 @@ function addModule() {
 }
 //--></script>
 <?php echo $footer; ?>
+

@@ -6,20 +6,7 @@ class ControllerModuleDisputa extends Controller {
 		if (!$this->user->hasPermission('modify', 'module/disputa')) {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
-		
-/*
-		if ((utf8_strlen($this->request->post['name']) < 3) || (utf8_strlen($this->request->post['name']) > 64)) {
-			$this->error['name'] = $this->language->get('error_name');
-		}
-		
-		if (!$this->request->post['width']) {
-			$this->error['width'] = $this->language->get('error_width');
-		}
-		
-		if (!$this->request->post['height']) {
-			$this->error['height'] = $this->language->get('error_height');
-		}
-*/
+
 		return !$this->error;
 	}
 
@@ -103,28 +90,6 @@ class ControllerModuleDisputa extends Controller {
 		$this->session->data['footer'] = $this->load->controller('common/footer');
 				
 		$this->response->setOutput($this->load->view('module/disputa.tpl', $this->session->data));
-	}
-
-	public function export() {
-		$this->load->model('module/disputa');
-		$data = $this->model_module_disputa->getData();
-		foreach ($data as $user) {
-			echo($user['url']) .',';
-			echo($user['valor']) .',';
-			echo($user['usuario']) .',';
-			echo($user['email']) .',';
-			echo($user['datahora']) .',';
-			echo  ';';
-		}	
-		
-		header("Pragma: public");
-	    header("Expires: 0");
-	    header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-	    header("Content-Type: application/force-download");
-	    header("Content-Type: application/octet-stream");
-	    header("Content-Type: application/download");
-	    header("Content-Disposition: attachment;filename=export.csv");
-	    header("Content-Transfer-Encoding: binary");
 	}
 }
 ?>

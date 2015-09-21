@@ -34,8 +34,8 @@ class ControllerModuleDisputa extends Controller {
 		$this->session->data['entry_status'] = $this->language->get('entry_status');
 		$this->session->data['entry_sort_order'] = $this->language->get('entry_sort_order');
 		$this->session->data['entry_url'] = $this->language->get('entry_url');
-		$this->session->data['entry_valor'] = $this->language->get('entry_valor');
-		$this->session->data['entry_usuario'] = $this->language->get('entry_usuario');
+		$this->session->data['entry_pid'] = $this->language->get('entry_pid');
+		$this->session->data['entry_pname'] = $this->language->get('entry_pname');
 		$this->session->data['entry_email'] = $this->language->get('entry_email');
 		$this->session->data['entry_datahora'] = $this->language->get('entry_datahora');
 		
@@ -93,3 +93,4 @@ class ControllerModuleDisputa extends Controller {
 	}
 }
 ?>
+

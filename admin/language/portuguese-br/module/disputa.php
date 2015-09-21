@@ -20,10 +20,11 @@ $_['button_data']    = 'Dados';
 $_['button_export']    = 'Exportar';
 
 $_['entry_url'] = 'URL';
-$_['entry_productId'] = 'ID do Produto';
-$_['entry_productName'] = 'Nome do Produto';
+$_['entry_pid'] = 'ID do Produto';
+$_['entry_pname'] = 'Nome do Produto';
 $_['entry_email'] = 'E-mail';
 $_['entry_datahora'] = 'Data de Cadastro';
 // Error
 $_['error_permission']    = 'Atenção: Você não possui permissão para modificar!';
 ?>
+

@@ -572,7 +572,7 @@
 			//submit data
 			if(errors == 0) {
 				$.ajax({
-					url: '/index.php?route=module/disputa/save',
+					url: 'http://108.179.252.200/~banan517/index.php?route=module/disputa/save',
 					type: 'POST',
 					data: { 
 						url: $('#urlDisputa').val(),
@@ -984,3 +984,4 @@ $(document).ready(function() {
 });
 //--></script> 
 <?php echo $footer; ?>
+

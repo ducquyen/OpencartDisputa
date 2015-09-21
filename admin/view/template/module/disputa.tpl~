@@ -19,9 +19,9 @@
         <thead>
           <tr>
             <td class="left"><?php echo $entry_url; ?></td>
-	    <td class="left"><?php echo $entry_valor; ?></td>
-	    <td class="left"><?php echo $entry_usuario; ?></td>
-            <td class="left"><?php echo $entry_email; ?></td>
+	    <td class="left"><?php echo $entry_email; ?></td>
+	    <td class="left"><?php echo $entry_productId; ?></td>
+            <td class="left"><?php echo $entry_productName; ?></td>
             <td class="left"><?php echo $entry_datahora; ?></td>
           </tr>
         </thead>
@@ -30,9 +30,9 @@
         <tbody >
           <tr>
             <td class="left"><?php echo $user['url']; ?></td>
-	    <td class="left"><?php echo $user['valor']; ?></td>
-            <td class="left"><?php echo $user['usuario']; ?></td>
-	    <td class="left"><?php echo $user['email'];?></td>
+	    <td class="left"><?php echo $user['email']; ?></td>
+            <td class="left"><?php echo $user['productId']; ?></td>
+	    <td class="left"><?php echo $user['productName'];?></td>
             <td class="left"><?php echo $user['datahora']; ?></td>
           </tr>
         </tbody>
