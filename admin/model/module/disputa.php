@@ -14,7 +14,7 @@
 		}
 
 		public function getData() {
-			$query = $this->db->query("select * from disputas");
+			$query = $this->db->query("select * from disputas where status = 'Pendente'");
 
 			return $query->rows;
 		}
